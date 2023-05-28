@@ -26,7 +26,7 @@ const App = ({ signOut }) => {
 
   async function fetchNotes() {
     const apiData = await API.graphql({ query: listNotes });
-    const notesFromAPI = apiData.data.listTodos.items;
+    const notesFromAPI = apiData.data.listNotes.items;
     setNotes(notesFromAPI);
   };
 
